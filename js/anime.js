@@ -93,7 +93,7 @@ $(document).ready(function () {
           if ($.trim(classserver) == "mystream" || $.trim(classserver) == "mystream nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src="https://embed.mystream.to/' +
+           '<iframe class="lazy-loaded" id="iframe-embed" data-src="https://embed.mystream.to/' +
                linktop +
                '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>'
        )
@@ -102,7 +102,7 @@ $(document).ready(function () {
 } else if ($.trim(classserver) == "streamtape" || $.trim(classserver) == "streamtape nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src="/dist/streamtap.php?id=' +
+           '<iframe class="lazy-loaded" id="iframe-embed" data-src="/dist/streamtap.php?id=' +
                linktop +
                '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>'
        )
@@ -111,7 +111,7 @@ $(document).ready(function () {
 } else if ($.trim(classserver) == "uqload" || $.trim(classserver) == "uqload nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src="https://uqload.com/embed-' +
+           '<iframe class="lazy-loaded" id="iframe-embed" data-src="https://uqload.com/embed-' +
                linktop +
                '.html" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>'
        )
@@ -120,7 +120,7 @@ $(document).ready(function () {
 } else if ($.trim(classserver) == "vip" || $.trim(classserver) == "vip nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src=' +
+           '<iframe class="lazy-loaded" id="iframe-embed" src=' +
                linktop +
                ' frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>'
        )
@@ -129,7 +129,7 @@ $(document).ready(function () {
 } else if ($.trim(classserver) == "vidfast" || $.trim(classserver) == "vidfast nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src="https://vidfast.co/embed-' +
+           '<iframe class="lazy-loaded" id="iframe-embed" data-src="https://vidfast.co/embed-' +
                linktop +
                '.html" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>'
        )
@@ -138,7 +138,7 @@ $(document).ready(function () {
 } else if ($.trim(classserver) == "verystream" || $.trim(classserver) == "verystream nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src="https://verystream.com/e/' +
+           '<iframe class="lazy-loaded" id="iframe-embed" data-src="https://verystream.com/e/' +
                linktop +
                '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>'
        )
@@ -147,7 +147,7 @@ $(document).ready(function () {
 } else if ($.trim(classserver) == "rapids" || $.trim(classserver) == "rapids nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src="https://rapidstream.co/embed-' +
+           '<iframe class="lazy-loaded" id="iframe-embed" data-src="https://rapidstream.co/embed-' +
                linktop +
                '.html" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>'
        )
@@ -156,7 +156,7 @@ $(document).ready(function () {
 } else if ($.trim(classserver) == "cloudvideo" || $.trim(classserver) == "cloudvideo nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src="https://cloudvideo.tv/embed-' +
+           '<iframe class="lazy-loaded" id="iframe-embed" data-src="https://cloudvideo.tv/embed-' +
                linktop +
                '.html" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>'
        )
@@ -165,7 +165,7 @@ $(document).ready(function () {
 } else if ($.trim(classserver) == "mytv" || $.trim(classserver) == "mytv nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src="https://www.myvi.tv/embed/' +
+           '<iframe class="lazy-loaded" id="iframe-embed" data-src="https://www.myvi.tv/embed/' +
                linktop +
                '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>'
        )
@@ -173,13 +173,13 @@ $(document).ready(function () {
        .fadeIn(300);
 } else if ($.trim(classserver) == "uptostream" || $.trim(classserver) == "uptostream nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://uptostream.com/iframe/' + linktop + '" width="968" height="480" scrolling="no" frameborder="0" allowfullscreen webkitallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://uptostream.com/iframe/' + linktop + '" width="968" height="480" scrolling="no" frameborder="0" allowfullscreen webkitallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "gtv" || $.trim(classserver) == "gtv nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src="https://iframedream.com/embed/' +
+           '<iframe class="lazy-loaded" id="iframe-embed" data-src="https://iframedream.com/embed/' +
                linktop +
                '.html" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>'
        )
@@ -187,29 +187,29 @@ $(document).ready(function () {
        .fadeIn(300);
 } else if ($.trim(classserver) == "fembed" || $.trim(classserver) == "fembed nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://toopl.xyz/v/' + linktop + '.html" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://toopl.xyz/v/' + linktop + '.html" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "hydrax" || $.trim(classserver) == "hydrax nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://freeplayervideo.com/?v=' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://freeplayervideo.com/?v=' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "gou" || $.trim(classserver) == "gou nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="/dist/indexgo.php?id=' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="/dist/indexgo.php?id=' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "cdnt" || $.trim(classserver) == "cdnt nower") {
  
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://mb.toonanime.xyz/dist/vanime.html?id=' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://mb.toonanime.xyz/dist/vanime.html?id=' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
      $("#iframe-embed").show();
 } else if ($.trim(classserver) == "rapidvideo" || $.trim(classserver) == "rapidvideo nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://www.rapidvideo.com/e/' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://www.rapidvideo.com/e/' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "namba" || $.trim(classserver) == "namba nower") {
@@ -226,37 +226,37 @@ $(document).ready(function () {
        
 } else if ($.trim(classserver) == "kaztube" || $.trim(classserver) == "kaztube nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://kaztube.kz/video/embed/' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://kaztube.kz/video/embed/' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "tune" || $.trim(classserver) == "tune nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://tune.pk/player/embed_player.php?vid=' + linktop + '" autoplay="no" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://tune.pk/player/embed_player.php?vid=' + linktop + '" autoplay="no" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "sibnet" || $.trim(classserver) == "sibnet nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="/dist/indexs.php?id=' + linktop + '" width="685" height="480" frameborder="0" allowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="/dist/indexs.php?id=' + linktop + '" width="685" height="480" frameborder="0" allowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "netu" || $.trim(classserver) == "netu nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://waaw.tv/watch_video.php?v=' + linktop + '" width="685" height="480" frameborder="0" allowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://waaw.tv/watch_video.php?v=' + linktop + '" width="685" height="480" frameborder="0" allowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "rutube" || $.trim(classserver) == "rutube nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://rutube.ru/play/embed/' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://rutube.ru/play/embed/' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "dailymotion" || $.trim(classserver) == "dailymotion nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://dailymotion.com/embed/video/' + linktop + '?logo=0&amp;info=0&amp;" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://dailymotion.com/embed/video/' + linktop + '?logo=0&amp;info=0&amp;" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "openload" || $.trim(classserver) == "openload nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://openload.co/embed/' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://openload.co/embed/' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "yandex" || $.trim(classserver) == "yandex nower") {
@@ -272,43 +272,43 @@ $(document).ready(function () {
        .fadeIn(300);
 } else if ($.trim(classserver) == "ok" || $.trim(classserver) == "ok nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://www.ok.ru/videoembed/' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://www.ok.ru/videoembed/' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "vidspot" || $.trim(classserver) == "vidspot nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "vid" || $.trim(classserver) == "vid nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "cloudy" || $.trim(classserver) == "cloudy nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "google" || $.trim(classserver) == "google nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "youtube" || $.trim(classserver) == "youtube nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "moevideo" || $.trim(classserver) == "moevideo nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="' + linktop + '" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowFullScreen webkitallowfullscreen mozallowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 } else if ($.trim(classserver) == "mail" || $.trim(classserver) == "mail nower") {
     $("#embed-loading").hide();$(".new_player_content")
        .html(
-           '<iframe id="iframe-embed" src="https://videoapi.my.mail.ru/videos/embed/mail/' +
+           '<iframe class="lazy-loaded" id="iframe-embed" data-src="https://videoapi.my.mail.ru/videos/embed/mail/' +
                linktop +
                '" width="968" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
        )
@@ -316,7 +316,7 @@ $(document).ready(function () {
        .fadeIn(300);
 } else if ($.trim(classserver) == "mail2" || $.trim(classserver) == "mail2 nower") {
     $("#embed-loading").hide();$(".new_player_content")
-       .html('<iframe id="iframe-embed" src="https://my.mail.ru/video/embed/' + linktop + '" width="968" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+       .html('<iframe class="lazy-loaded" id="iframe-embed" data-src="https://my.mail.ru/video/embed/' + linktop + '" width="968" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
        .fadeOut(300)
        .fadeIn(300);
 }
